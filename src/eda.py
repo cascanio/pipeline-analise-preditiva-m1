@@ -36,13 +36,15 @@ def executar_eda(df):
     
     # Gráfico 2: Gráfico de barras da variável alvo (Falha)
     # Para que: Comprovar visualmente o desbalanceamento (Gráfico exigido no critério!)
+    # Modifique apenas a parte do Gráfico 2 dentro do seu arquivo eda.py:
     plt.figure(figsize=(6, 4))
-    if 'Falha' in df.columns:
-        sns.countplot(x='Falha', data=df, palette='Set2')
-        plt.title("Taxa de Desbalanceamento da Variável Alvo (Falha)")
+    if 'falha_maquina' in df.columns:
+        sns.countplot(x='falha_maquina', data=df, palette='Set2')
+        plt.title("Taxa de Desbalanceamento da Variável Alvo (falha_maquina)")
         plt.tight_layout()
         plt.savefig("data/desbalanceamento_alvo.png")
         plt.close()
+
         
     # Gráfico 3: Mapa de Calor (Heatmap) de Correlação de Pearson
     # Para que: Ver quais variáveis têm forte relação com a quebra mecânica ou entre si.
