@@ -5,7 +5,6 @@ import seaborn as sns
 def executar_eda(df):
     """
     Objetivo: Entender os dados e extrair os primeiros insights estatísticos.
-    Para que: Garantir nota máxima no Critério 4 (EDA completo + Gráficos).
     """
     print("\n--- FASE 1: ANÁLISE EXPLORATÓRIA DE DADOS (EDA) ---")
     
@@ -26,7 +25,7 @@ def executar_eda(df):
     # Gráfico 1: Histograma das variáveis preditoras numéricas (ex: Torque)
     # Para que: Ver se os dados seguem uma distribuição normal ou têm distorções.
     plt.figure(figsize=(6, 4))
-    # Substitua 'torque_nm' pelo nome exato da coluna do seu CSV após abri-lo
+    
     if 'torque_nm' in df.columns:
         sns.histplot(df['torque_nm'], kde=True, color='blue')
         plt.title("Distribuição da Variável Torque (Nm)")
@@ -35,8 +34,7 @@ def executar_eda(df):
         plt.close()
     
     # Gráfico 2: Gráfico de barras da variável alvo (Falha)
-    # Para que: Comprovar visualmente o desbalanceamento (Gráfico exigido no critério!)
-    # Modifique apenas a parte do Gráfico 2 dentro do seu arquivo eda.py:
+    # Para que: Comprovar visualmente o desbalanceamento   
     plt.figure(figsize=(6, 4))
     if 'falha_maquina' in df.columns:
         sns.countplot(x='falha_maquina', data=df, palette='Set2')

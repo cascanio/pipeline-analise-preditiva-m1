@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score
 def executar_modelagem(X_train_knn, X_test_knn, X_train_tree, X_test_tree, y_train, y_test):
     """
     Objetivo: Treinar os modelos KNN e Árvore variando os parâmetros de controle.
-    Para que: Combater o overfitting e extrair as acurácias finais (Critérios 9 e 10).
+    Para que: Combater o overfitting e extrair as acurácias finais
     """
     print("\n--- FASE 6: AJUSTE DE PARÂMETROS E COMBATE AO OVERFITTING ---")
     

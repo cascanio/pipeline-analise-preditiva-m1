@@ -8,8 +8,7 @@ from imblearn.over_sampling import SMOTE
 
 def preparar_dados(df):
     """
-    Objetivo: Limpar, transformar, dividir e balancear os dados da fábrica.
-    Para que: Garantir nota máxima nos Critérios 5, 6, 7 e 8 de avaliação.
+    Objetivo: Limpar, transformar, dividir e balancear os dados da fábrica.    
     """
     print("\n--- FASE 2: LIMPEZA E TRATAMENTO DE DADOS (DATA PREP) ---")
     
